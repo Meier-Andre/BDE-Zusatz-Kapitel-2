@@ -1,6 +1,7 @@
 Nach Erstellung einer jar aus der Klasse AutomarkenGen.class erhalten wir eine Datei namens carbrands.txt, welche 150000 mal Automarken enthält, repliziert aus der in der Klasse definierten String Array.
 
-``` [cloudera@quickstart ~]$ hadoop jar carbrands.jar carbrands.txt
+``` 
+[cloudera@quickstart ~]$ hadoop jar carbrands.jar carbrands.txt
 [cloudera@quickstart ~]$ hdfs dfs -cat carbrands.txt | less
 ```
 Durch den MapReduce Job soll nun die Häufigkeit der verschiedenen Automarken gezählt werden. Zunaechst wird die Fehlermeldung gecheckt, dann wird der korrekte Aufruf angegeben. 
